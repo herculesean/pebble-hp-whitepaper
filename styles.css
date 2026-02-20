@@ -329,7 +329,7 @@ body.lang-en { word-break: normal; }
 }
 
 .person-history li::before {
-  content: '--';
+  content: '-';
   position: absolute;
   left: 0;
   color: #9ca3af;
@@ -683,7 +683,7 @@ body.dark .toc-dropdown a:hover {
 }
 
 body.dark .top-bar-logo-img {
-  filter: brightness(1.5);
+  filter: brightness(0) invert(1);
 }
 
 body.dark .meta-info span {
