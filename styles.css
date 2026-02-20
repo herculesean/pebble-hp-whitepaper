@@ -149,15 +149,18 @@ body.lang-en { word-break: normal; }
 }
 
 @media (max-width: 1299px) {
+  .top-bar-inner {
+    justify-content: space-between;
+  }
+  .top-bar-logo {
+    order: -1;
+    margin-right: 0;
+  }
   .toc-toggle-btn {
     display: block;
     order: 0;
     flex: 1;
     text-align: center;
-  }
-  .top-bar-logo {
-    order: -1;
-    margin-right: 0;
   }
   .top-bar-actions {
     order: 1;
