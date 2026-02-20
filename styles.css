@@ -348,11 +348,11 @@ body.lang-en { word-break: normal; }
 }
 
 .person-history li::before {
-  content: '-';
+  content: '\2022';
   position: absolute;
-  left: 0;
+  left: 2px;
   color: #9ca3af;
-  font-family: monospace;
+  font-size: 10px;
   font-size: 12px;
 }
 
