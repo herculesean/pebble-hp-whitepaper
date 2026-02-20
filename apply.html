@@ -158,7 +158,11 @@
       <h1>Pebble 지원하기</h1>
       <p class="subtitle">recruit@pebblecorp.io</p>
 
-      <form id="form">
+      <form id="form" action="https://formsubmit.co/recruit@pebblecorp.io" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="[Pebble] 새로운 지원서가 접수되었습니다">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://herculesean.github.io/pebble-hp-whitepaper/apply.html?success=1">
         <div class="form-group">
           <label>지원 분야 <span class="required">*</span></label>
           <select name="position" required>
@@ -215,11 +219,11 @@
       document.getElementById('coverLabel').textContent = name ? '변경' : '파일 선택';
     });
 
-    document.getElementById('form').addEventListener('submit', function(e) {
-      e.preventDefault();
+    // Show success message if redirected back after submission
+    if (window.location.search.includes('success=1')) {
       document.getElementById('applyForm').style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
-    });
+    }
   </script>
 </body>
 </html>
