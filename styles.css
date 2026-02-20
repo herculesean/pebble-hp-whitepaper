@@ -80,17 +80,9 @@ body.lang-en { word-break: normal; }
   margin-right: auto;
 }
 
-.top-bar-logo-icon {
+.top-bar-logo-img {
   height: 22px;
   width: auto;
-}
-
-.top-bar-logo-text {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: #3d4856;
-  letter-spacing: -0.3px;
 }
 
 .top-bar-actions {
@@ -690,12 +682,8 @@ body.dark .toc-dropdown a:hover {
   color: #7db4f0;
 }
 
-body.dark .top-bar-logo-icon {
+body.dark .top-bar-logo-img {
   filter: brightness(1.5);
-}
-
-body.dark .top-bar-logo-text {
-  color: #c9cdd1;
 }
 
 body.dark .meta-info span {
