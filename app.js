@@ -28,9 +28,14 @@
   // ── Dark Mode Toggle ──
   var themeToggle = document.getElementById('themeToggle');
 
+  var topBarLogo = document.getElementById('topBarLogo');
+
   function setTheme(dark) {
     body.classList.toggle('dark', dark);
     themeToggle.textContent = dark ? 'Light' : 'Dark';
+    if (topBarLogo) {
+      topBarLogo.style.filter = dark ? 'brightness(0) invert(1)' : 'none';
+    }
     localStorage.setItem('pebble-wp-theme', dark ? 'dark' : 'light');
   }
 
