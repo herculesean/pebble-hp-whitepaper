@@ -156,6 +156,10 @@ body.lang-en { word-break: normal; }
     order: -1;
     margin-right: 0;
   }
+  .top-bar-logo-img {
+    height: 22px;
+    max-height: 22px;
+  }
   .toc-toggle-btn {
     display: block;
     order: 0;
