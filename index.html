@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pebble — Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body class="lang-ko">
+
+  <!-- Search -->
+  <div class="search-overlay" id="searchOverlay">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <span class="search-hint">ESC</span>
+  </div>
+
+  <!-- Fixed Top Bar -->
+  <div class="top-bar" id="topBar">
+    <div class="top-bar-inner">
+      <button class="toc-toggle-btn" id="mobileTocToggle" aria-expanded="false">Contents &#9662;</button>
+      <a href="#cover" class="top-bar-logo">
+        <img class="top-bar-logo-icon" src="logo-icon.png" alt="Pebble">
+        <span class="top-bar-logo-text">Pebble</span>
+      </a>
+      <div class="top-bar-actions">
+        <a href="#" data-set-lang="ko" class="active">KO</a>
+        <span class="top-sep">|</span>
+        <a href="#" data-set-lang="en">EN</a>
+        <span class="top-sep">|</span>
+        <button class="theme-toggle" id="themeToggle">Dark</button>
+      </div>
+    </div>
+    <div class="toc-dropdown" id="mobileTocDropdown">
+      <a href="#abstract">Abstract</a>
+      <a href="#introduction">1. Introduction</a>
+      <a href="#team">2. Team</a>
+      <a href="#career">3. Career</a>
+      <a href="#contact-section">4. Contact</a>
+    </div>
+  </div>
+
+  <!-- Margin TOC (desktop) -->
+  <nav class="margin-toc" id="marginToc">
+    <ul>
+      <li><a href="#abstract">Abstract</a></li>
+      <li><a href="#introduction">1. Introduction</a></li>
+      <li><a href="#team">2. Team</a></li>
+      <li><a href="#career">3. Career</a></li>
+      <li><a href="#contact-section">4. Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-bg">
+    <article class="paper">
+
+      <!-- Cover -->
+      <header class="cover" id="cover">
+        <div class="cover-top">
+          <div class="meta-info">
+            <span>PEBBLE WEBSITE</span>
+            <span>v1.0</span>
+            <span>LAST UPDATE: 2026-02-20</span>
+            <span>Developed by Opus 4.6</span>
+          </div>
+        </div>
+        <div class="cover-title">
+          <h1>Pebble</h1>
+          <p class="cover-subtitle">Established Algorithm-based Proprietary Trading Firm</p>
+        </div>
+        <p class="cover-disclaimer">This website is provided for informational purposes only.</p>
+      </header>
+
+      <hr class="section-rule">
+
+      <!-- Abstract -->
+      <section id="abstract" class="section">
+        <h2>Abstract</h2>
+        <p data-lang="ko">페블은 알고리즘을 활용한 차익거래와 퀀트를 중심으로 하는 자기자본 시스템 운용 투자회사입니다. 디지털 자산 시장에서 저위험 저수익 거래를 통해 수익을 창출합니다. 폭넓은 데이터를 고도의 알고리즘으로 분석하고, 투자 빈도를 최대화해서 꾸준한 수익을 내는 것을 목표로 합니다. 페블은 자기자본 투자에 집중하고 있어 외부 투자자와 고객이 없습니다.</p>
+        <p data-lang="en">Pebble is a proprietary, system-driven investment firm focused on arbitrage and quantitative strategies using algorithms. We generate returns through low-risk, low-return trades in the digital asset market. We analyze a wide range of data with advanced algorithms and aim to generate consistent returns by maximizing trade frequency. Pebble focuses on proprietary capital investment and has no external investors or clients.</p>
+      </section>
+
+      <!-- 1. Introduction -->
+      <section id="introduction" class="section">
+        <h2>1. Introduction</h2>
+
+        <div data-lang="ko">
+          <p class="emphasis-block">페블은 직관에 의존하지 않고 모든 전략을 알고리즘으로 실행합니다.</p>
+
+          <p>페블은 2021년 설립 이후, 디지털 자산 시장에서 저위험 저수익 거래를 지속해 왔습니다. 페블의 구성원은 시장은 매우 효율적이라는 믿음 아래, 위험을 최소화한 투자전략을 사용합니다. 폭넓은 데이터를 고도의 알고리즘으로 분석하고, 투자 빈도를 최대화해서 꾸준한 수익을 내는 것을 목표로 합니다. 시장을 이길 수 있다는 주장, 논리, 과시는 대부분 실패합니다. 투자의 역사를 돌아보면 뛰어난 투자 전문가가 그 성과를 지속하는 확률은 매우 낮습니다. 직관에 의존하는 대중의 투자도 대부분 실패합니다. 페블은 직관에 의존하지 않고 모든 전략을 알고리즘으로 실행하며 최대 위험은 제한되어 있습니다.</p>
+
+          <dl class="strategy-list">
+            <dt>Quantitative Investment</dt>
+            <dd>데이터를 통계적으로 분석하여 규칙에 기반한(rule-based) 거래를 실행</dd>
+            <dt>Arbitrage (차익거래)</dt>
+            <dd>두 개 이상의 시장에서 같은 자산에 대해 가격 차이가 발생할 경우, 그 괴리를 메우는 거래를 실행하여 무위험 수익을 얻음</dd>
+            <dt>Unstructured data</dt>
+            <dd>비정형 데이터를 활용 가능한 데이터로 변환 및 분석하여 투자 전략 실행</dd>
+          </dl>
+
+          <p class="emphasis-block">페블에는 외부 투자자와 고객이 없습니다.</p>
+
+          <p>페블은 근거 없는 자신감은 지양합니다. 다만, 투자의 패러다임이 바뀌고 있음을 이해하고 기술을 활용한 투자 전략에 집중합니다. 시장 가격의 위대함을 이해하지 못하는 기술은 실패하고, 기술을 무시하는 자아도취형 전문가 또한 실패합니다. 페블은 설립 이래 직관 대신 기술에 기반한 투자를 통해 꾸준히 성과를 내고 있습니다. 페블은 위험 조정 수익률을 최대화하는 것을 목표로 합니다. 페블의 투자 전략 특성을 고려하여, 불특정 다수를 대상으로 한 펀딩 등 운용 규모의 확대를 계획하고 있지 않으며, 상당 기간 자기자본 투자를 지속할 예정입니다.</p>
+
+          <p>물론 Quant, Arbitrage 전략 또한 만능은 아닙니다. 업계에서 활용하는 전략은 overfitting의 위험을 충분히 경계하지 못한 경우가 많으며 이에 따라 전략의 쏠림이 심화되어 굉장히 짧은 기간에 걸쳐 장기간의 성과를 반납하는 역사를 반복하기도 합니다. Arbitrage는 기술과 인프라에 대한 대중의 접근이 용이해지며 점차 성과가 낮아지고 있습니다.</p>
+        </div>
+
+        <div data-lang="en">
+          <p class="emphasis-block">Pebble does not rely on intuition. All strategies are executed algorithmically.</p>
+
+          <p>Since its establishment in 2021, Pebble has been conducting low-risk, low-return trades in the digital asset market. Under the belief that markets are highly efficient, Pebble's team uses investment strategies that minimize risk. We analyze a wide range of data with advanced algorithms and aim to generate consistent returns by maximizing trade frequency. Claims, logic, and boasting about beating the market mostly fail. Looking back at investment history, the probability of outstanding investment professionals sustaining their performance is very low. Retail investors relying on intuition also mostly fail. Pebble does not rely on intuition; all strategies are executed algorithmically with maximum risk being limited.</p>
+
+          <dl class="strategy-list">
+            <dt>Quantitative Investment</dt>
+            <dd>Statistically analyzing data to execute rule-based trading.</dd>
+            <dt>Arbitrage</dt>
+            <dd>When price differences for the same asset occur across two or more markets, we execute trades to capture the gap and obtain risk-free returns.</dd>
+            <dt>Unstructured Data</dt>
+            <dd>Converting and analyzing unstructured data into usable data to execute investment strategies.</dd>
+          </dl>
+
+          <p class="emphasis-block">Pebble has no external investors or clients.</p>
+
+          <p>Pebble avoids unfounded confidence. However, we understand that the investment paradigm is changing and focus on technology-driven investment strategies. Technology that fails to understand the efficiency of market prices will fail, and self-absorbed experts who ignore technology will also fail. Since its establishment, Pebble has consistently generated results through technology-based rather than intuition-based investment. Pebble aims to maximize risk-adjusted returns. Given the nature of Pebble's investment strategies, we do not plan to expand the scale of operations through funding targeting the general public, and will continue proprietary capital investment for a considerable period.</p>
+
+          <p>Of course, Quant and Arbitrage strategies are not infallible either. Strategies commonly used in the industry often fail to adequately guard against overfitting risks, leading to concentration of strategies and the historical pattern of surrendering long-term gains over very short periods. Returns from arbitrage have been gradually declining as public access to technology and infrastructure becomes easier.</p>
+        </div>
+      </section>
+
+      <!-- 2. Team -->
+      <section id="team" class="section">
+        <h2>2. Team</h2>
+
+        <div class="person">
+          <div class="person-header">
+            <span class="person-name">Jinseok Kim</span>
+            <span class="person-role">Founder and CEO</span>
+          </div>
+          <blockquote class="person-quote">"Seize the day, boys."</blockquote>
+          <ul class="person-history" data-lang="ko">
+            <li>전) Line Corp, Portfolio Manager</li>
+            <li>전) Korea Investment Corporation, Portfolio Manager</li>
+            <li>서울대학교 경영학과</li>
+            <li>CFA charterholder</li>
+            <li>CAIA charterholder</li>
+          </ul>
+          <ul class="person-history" data-lang="en">
+            <li>Former) Line Corp, Portfolio Manager</li>
+            <li>Former) Korea Investment Corporation, Portfolio Manager</li>
+            <li>Seoul National University, BBA</li>
+            <li>CFA charterholder</li>
+            <li>CAIA charterholder</li>
+          </ul>
+        </div>
+
+        <div class="person">
+          <div class="person-header">
+            <span class="person-name">Jaeyeon Yoon</span>
+            <span class="person-role">Head, System Trading</span>
+          </div>
+          <blockquote class="person-quote">"Seize the day, boys."</blockquote>
+          <ul class="person-history" data-lang="ko">
+            <li>전) AIRS Medical, Co-founder</li>
+            <li>서울대학교 전기정보공학부</li>
+          </ul>
+          <ul class="person-history" data-lang="en">
+            <li>Former) AIRS Medical, Co-founder</li>
+            <li>Seoul National University, ECE</li>
+          </ul>
+        </div>
+
+        <div class="person">
+          <div class="person-header">
+            <span class="person-name">Kyungwook Nam</span>
+            <span class="person-role">Portfolio Manager, System Trading</span>
+          </div>
+          <blockquote class="person-quote">"Seize the day, boys."</blockquote>
+          <ul class="person-history" data-lang="ko">
+            <li>전) Artefact Korea, Data Consulting</li>
+            <li>전) KeyToWay, IT Consulting</li>
+            <li>전) AT Kearney, Strategy Consulting</li>
+            <li>전) Story Education, STEM Instructor</li>
+            <li>Univ. of Cambridge Systems Biology (석사)</li>
+            <li>Univ. of Cambridge Mathematics</li>
+          </ul>
+          <ul class="person-history" data-lang="en">
+            <li>Former) Artefact Korea, Data Consulting</li>
+            <li>Former) KeyToWay, IT Consulting</li>
+            <li>Former) AT Kearney, Strategy Consulting</li>
+            <li>Former) Story Education, STEM Instructor</li>
+            <li>Univ. of Cambridge Systems Biology (Master's)</li>
+            <li>Univ. of Cambridge Mathematics</li>
+          </ul>
+        </div>
+
+        <div class="person">
+          <div class="person-header">
+            <span class="person-name">Sunghak Kang</span>
+            <span class="person-role">COO</span>
+          </div>
+          <blockquote class="person-quote">"Seamos realistas, realicemos lo imposible!"</blockquote>
+          <ul class="person-history" data-lang="ko">
+            <li>전) McKinsey Seoul office, Associate Partner</li>
+            <li>전) LG Household &amp; Healthcare, Marketer</li>
+            <li>NYU Stern School of Business, MBA</li>
+            <li>고려대학교 경영학과</li>
+          </ul>
+          <ul class="person-history" data-lang="en">
+            <li>Former) McKinsey Seoul office, Associate Partner</li>
+            <li>Former) LG Household &amp; Healthcare, Marketer</li>
+            <li>NYU Stern School of Business, MBA</li>
+            <li>Korea University, BBA</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. Career -->
+      <section id="career" class="section">
+        <h2>3. Career</h2>
+
+        <p data-lang="ko">아래 포지션 지원자는 <a href="mailto:recruit@pebblecorp.io">recruit@pebblecorp.io</a>로 이력서 및 자기소개서(지원동기 포함 자유양식) 송부해주세요.</p>
+        <p data-lang="en">Interested candidates, please send your resume and cover letter to <a href="mailto:recruit@pebblecorp.io">recruit@pebblecorp.io</a>.</p>
+
+        <!-- Hiring Process Flowchart -->
+        <div class="process-box">
+        <div class="process-flow" data-lang="ko">
+          <svg viewBox="0 0 680 70" xmlns="http://www.w3.org/2000/svg" aria-label="채용 프로세스">
+            <text x="70" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">1</text>
+            <text x="250" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">2</text>
+            <text x="430" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">3</text>
+            <text x="610" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">4</text>
+            <rect x="0" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="70" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Noto Serif KR', serif">지원서 제출</text>
+            <line x1="140" y1="40" x2="176" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+            <polygon points="173,36 180,40 173,44" fill="currentColor" opacity="0.35"/>
+            <rect x="180" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="250" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Noto Serif KR', serif">서류 검토</text>
+            <line x1="320" y1="40" x2="356" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+            <polygon points="353,36 360,40 353,44" fill="currentColor" opacity="0.35"/>
+            <rect x="360" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="430" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Noto Serif KR', serif">면접</text>
+            <line x1="500" y1="40" x2="536" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+            <polygon points="533,36 540,40 533,44" fill="currentColor" opacity="0.35"/>
+            <rect x="540" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="610" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Noto Serif KR', serif">합격 발표</text>
+          </svg>
+        </div>
+        <div class="process-flow" data-lang="en">
+          <svg viewBox="0 0 680 70" xmlns="http://www.w3.org/2000/svg" aria-label="Hiring Process">
+            <text x="70" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">1</text>
+            <text x="250" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">2</text>
+            <text x="430" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">3</text>
+            <text x="610" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45" font-family="-apple-system, sans-serif">4</text>
+            <rect x="0" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="70" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Times New Roman', serif">Application</text>
+            <line x1="140" y1="40" x2="176" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+            <polygon points="173,36 180,40 173,44" fill="currentColor" opacity="0.35"/>
+            <rect x="180" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="250" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Times New Roman', serif">Review</text>
+            <line x1="320" y1="40" x2="356" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+            <polygon points="353,36 360,40 353,44" fill="currentColor" opacity="0.35"/>
+            <rect x="360" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="430" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Times New Roman', serif">Interview</text>
+            <line x1="500" y1="40" x2="536" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+            <polygon points="533,36 540,40 533,44" fill="currentColor" opacity="0.35"/>
+            <rect x="540" y="22" width="140" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <text x="610" y="45" text-anchor="middle" font-size="12.5" fill="currentColor" font-family="'Times New Roman', serif">Result</text>
+          </svg>
+        </div>
+        </div>
+
+        <div class="position" data-lang="ko">
+          <h3 class="position-title">정규직 -- 디지털 자산 시스템 운용</h3>
+          <div class="position-details">
+            <p><strong>주요 업무</strong> 자금 운용 / 퀀트, 차익거래 투자 아이디어 개발</p>
+            <p><strong>자격 요건</strong> 4년제 대학 이상 학위 취득자 또는 6개월 이내 졸업 예정자 / 신입/경력</p>
+            <p><strong>기타 사항</strong> 재택근무 / 성과보수 협의 / 수습기간 3개월</p>
+          </div>
+        </div>
+        <div class="position" data-lang="en">
+          <h3 class="position-title">[Full-time] Digital Asset Systematic Investment</h3>
+          <div class="position-details">
+            <p><strong>Job Description</strong> Asset management / Quantitative and arbitrage investment strategies development</p>
+            <p><strong>Requirement</strong> Bachelor's degree or higher, or expected to graduate within 6 months / Open to candidates of all levels</p>
+            <p><strong>Remarks</strong> Work from home / Performance-based compensation can be mutually agreed / A 3-month probationary period (the contract may be terminated based on the evaluation at the end of the probation)</p>
+          </div>
+        </div>
+
+        <div class="position" data-lang="ko">
+          <h3 class="position-title">인턴 -- 디지털 자산 시스템 운용</h3>
+          <div class="position-details">
+            <p><strong>주요 업무</strong> 퀀트, 차익거래 투자 아이디어 개발 및 리서치</p>
+            <p><strong>자격 요건</strong> 4년제 대학 이상 학위 취득자 또는 재학생 (주당 20시간 이상 근무 가능)</p>
+            <p><strong>기타 사항</strong> 재택근무</p>
+          </div>
+        </div>
+        <div class="position" data-lang="en">
+          <h3 class="position-title">[Intern] Digital Asset Systematic Investment</h3>
+          <div class="position-details">
+            <p><strong>Job Description</strong> Quantitative and arbitrage investment strategies development and research</p>
+            <p><strong>Requirement</strong> Bachelor's degree or higher, or expected to graduate within 6 months (Current students must be available to work at least 20 hours per week)</p>
+            <p><strong>Remarks</strong> Work from home</p>
+          </div>
+        </div>
+
+        <div class="apply-cta">
+          <a href="apply.html" target="_blank" class="apply-btn" data-lang="ko">지원하기</a>
+          <a href="apply.html" target="_blank" class="apply-btn" data-lang="en">Apply Now</a>
+        </div>
+      </section>
+
+      <!-- 4. Contact -->
+      <section id="contact-section" class="section">
+        <h2>4. Contact</h2>
+
+        <p data-lang="ko">페블의 비즈니스 및 파트너십에 대한 문의 사항은 아래 양식에 기입 또는 <a href="mailto:business@pebblecorp.io">business@pebblecorp.io</a>로 메일주세요.</p>
+        <p data-lang="en">For business and partnership inquiries, please fill out the form below or email <a href="mailto:business@pebblecorp.io">business@pebblecorp.io</a>.</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>
+              <span data-lang="ko">이름</span>
+              <span data-lang="en">Name</span>
+            </label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="ko">이메일</span>
+              <span data-lang="en">Email</span>
+            </label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="ko">메시지</span>
+              <span data-lang="en">Message</span>
+            </label>
+            <textarea name="message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <span data-lang="ko">제출</span>
+            <span data-lang="en">Submit</span>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <p data-lang="ko">제출해주셔서 감사합니다!</p>
+          <p data-lang="en">Thank you for your submission!</p>
+        </div>
+      </section>
+
+      <!-- References -->
+      <footer id="references" class="section references">
+        <h2>References</h2>
+        <p class="footer-info">주식회사 페블 | 사업자등록번호 201-86-47145 | <a href="mailto:business@pebblecorp.io">business@pebblecorp.io</a></p>
+        <p class="footer-end">End of document.</p>
+      </footer>
+
+    </article>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

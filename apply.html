@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pebble — Apply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Times New Roman", Times, "Noto Serif KR", serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #111111;
+      background: #F3F4F6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+    .container {
+      background: #FFFEFA;
+      max-width: 560px;
+      width: 100%;
+      padding: 48px 56px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #6B7280;
+      margin-bottom: 36px;
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #111111;
+    }
+    label .required {
+      color: #e53e3e;
+      margin-left: 2px;
+    }
+    select {
+      width: 100%;
+      font-family: inherit;
+      font-size: 15px;
+      padding: 8px 0;
+      border: none;
+      border-bottom: 1px solid #d1d5db;
+      background: transparent;
+      color: #111111;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      transition: border-color 150ms ease;
+    }
+    select:focus {
+      border-bottom-color: #0B1F3B;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: 15px;
+      padding: 8px 0;
+      border: none;
+      border-bottom: 1px solid #d1d5db;
+      background: transparent;
+      color: #111111;
+      outline: none;
+      transition: border-color 150ms ease;
+    }
+    input:focus,
+    textarea:focus {
+      border-bottom-color: #0B1F3B;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .file-label {
+      display: inline-block;
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      padding: 6px 16px;
+      border: 1px solid #d1d5db;
+      color: #6B7280;
+      cursor: pointer;
+      transition: border-color 150ms ease, color 150ms ease;
+    }
+    .file-label:hover {
+      border-color: #9ca3af;
+      color: #111111;
+    }
+    .file-input {
+      display: none;
+    }
+    .file-name {
+      font-size: 13px;
+      color: #6B7280;
+      margin-top: 6px;
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    }
+    .submit-btn {
+      font-family: inherit;
+      font-size: 15px;
+      padding: 10px 32px;
+      background: #111111;
+      color: #FFFEFA;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: background 150ms ease;
+      margin-top: 12px;
+    }
+    .submit-btn:hover {
+      background: #333333;
+    }
+    .success {
+      display: none;
+      text-align: center;
+      padding: 40px 0;
+    }
+    .success h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .success p {
+      font-size: 15px;
+      color: #6B7280;
+    }
+    @media (max-width: 480px) {
+      .container { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="applyForm">
+      <h1>Pebble 지원하기</h1>
+      <p class="subtitle">recruit@pebblecorp.io</p>
+
+      <form id="form">
+        <div class="form-group">
+          <label>지원 분야 <span class="required">*</span></label>
+          <select name="position" required>
+            <option value="" disabled selected>선택해주세요</option>
+            <option value="정규직 -- 디지털 자산 시스템 운용">정규직 -- 디지털 자산 시스템 운용</option>
+            <option value="인턴 -- 디지털 자산 시스템 운용">인턴 -- 디지털 자산 시스템 운용</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>이름 <span class="required">*</span></label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label>이메일 <span class="required">*</span></label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label>이력서 <span class="required">*</span></label>
+          <label class="file-label" id="resumeLabel">파일 선택</label>
+          <input type="file" class="file-input" id="resumeFile" accept=".pdf,.doc,.docx" required>
+          <div class="file-name" id="resumeName"></div>
+        </div>
+
+        <div class="form-group">
+          <label>자기소개서</label>
+          <label class="file-label" id="coverLabel">파일 선택</label>
+          <input type="file" class="file-input" id="coverFile" accept=".pdf,.doc,.docx">
+          <div class="file-name" id="coverName"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">지원하기</button>
+      </form>
+    </div>
+
+    <div class="success" id="successMsg">
+      <h2>지원이 완료되었습니다</h2>
+      <p>검토 후 이메일로 연락드리겠습니다.</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('resumeFile').addEventListener('change', function() {
+      var name = this.files[0] ? this.files[0].name : '';
+      document.getElementById('resumeName').textContent = name;
+      document.getElementById('resumeLabel').textContent = name ? '변경' : '파일 선택';
+    });
+
+    document.getElementById('coverFile').addEventListener('change', function() {
+      var name = this.files[0] ? this.files[0].name : '';
+      document.getElementById('coverName').textContent = name;
+      document.getElementById('coverLabel').textContent = name ? '변경' : '파일 선택';
+    });
+
+    document.getElementById('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('applyForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
