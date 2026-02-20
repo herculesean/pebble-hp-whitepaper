@@ -65,7 +65,7 @@ body.lang-en { word-break: normal; }
   display: none;
   background: none;
   border: none;
-  font-family: inherit;
+  font-family: "Times New Roman", Times, "Noto Serif KR", serif;
   font-size: 14px;
   color: #6B7280;
   cursor: pointer;
@@ -139,6 +139,7 @@ body.lang-en { word-break: normal; }
   display: block;
   padding: 7px 0;
   font-size: 16px;
+  font-family: "Times New Roman", Times, "Noto Serif KR", serif;
   color: #111111;
   text-decoration: none;
 }
@@ -150,6 +151,16 @@ body.lang-en { word-break: normal; }
 @media (max-width: 1299px) {
   .toc-toggle-btn {
     display: block;
+    order: 0;
+    flex: 1;
+    text-align: center;
+  }
+  .top-bar-logo {
+    order: -1;
+    margin-right: 0;
+  }
+  .top-bar-actions {
+    order: 1;
   }
 }
 
