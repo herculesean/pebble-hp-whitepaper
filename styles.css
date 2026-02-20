@@ -348,7 +348,7 @@ body.lang-en { word-break: normal; }
 /* ── Process Flowchart ── */
 .process-box {
   border: 1px solid #e5e7eb;
-  padding: 28px 32px;
+  padding: 14px 32px;
   margin: 32px 0;
 }
 
