@@ -118,16 +118,12 @@
     }
   });
 
-  // ── Contact Form ──
-  var contactForm = document.getElementById('contactForm');
-  var formSuccess = document.getElementById('formSuccess');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      contactForm.style.display = 'none';
-      formSuccess.style.display = 'block';
-    });
+  // ── Contact Form (success redirect) ──
+  if (window.location.search.includes('contact=success')) {
+    var contactForm = document.getElementById('contactForm');
+    var formSuccess = document.getElementById('formSuccess');
+    if (contactForm) contactForm.style.display = 'none';
+    if (formSuccess) formSuccess.style.display = 'block';
   }
 
 })();

@@ -504,7 +504,7 @@ body.lang-en { word-break: normal; }
   width: 160px;
   font-size: 18px;
   line-height: 1.5;
-  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Times New Roman", Times, "Noto Serif KR", serif;
 }
 
 .margin-toc ul {

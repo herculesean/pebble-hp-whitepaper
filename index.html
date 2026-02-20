@@ -323,7 +323,11 @@
         <p data-lang="ko">파트너십 문의는 아래 양식에 기입 또는 <a href="mailto:business@pebblecorp.io">business@pebblecorp.io</a>로 메일주세요.</p>
         <p data-lang="en">For business and partnership inquiries, please fill out the form below or email <a href="mailto:business@pebblecorp.io">business@pebblecorp.io</a>.</p>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/business@pebblecorp.io" method="POST">
+          <input type="hidden" name="_subject" value="[Pebble] 새로운 문의가 접수되었습니다">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://herculesean.github.io/pebble-hp-whitepaper/?contact=success">
           <div class="form-group">
             <label>
               <span data-lang="ko">이름</span>
