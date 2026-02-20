@@ -39,7 +39,8 @@
   });
 
   var savedTheme = localStorage.getItem('pebble-wp-theme');
-  if (savedTheme === 'dark') setTheme(true);
+  if (savedTheme === 'light') setTheme(false);
+  else setTheme(true);
 
   // ── Scroll Spy (Margin TOC) ──
   var sectionIds = ['abstract', 'introduction', 'team', 'career', 'contact-section'];

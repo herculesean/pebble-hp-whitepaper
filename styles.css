@@ -17,7 +17,6 @@ body {
   color: #111111;
   background: #F3F4F6;
   -webkit-font-smoothing: auto;
-  word-break: keep-all;
   overflow-wrap: break-word;
 }
 
@@ -34,6 +33,11 @@ a:hover {
 /* ── Language Toggle ── */
 body.lang-ko [data-lang="en"] { display: none !important; }
 body.lang-en [data-lang="ko"] { display: none !important; }
+body.lang-ko { word-break: break-all; }
+body.lang-en { word-break: normal; }
+
+/* ── Mobile line break ── */
+.mobile-br { display: none; }
 
 /* ── Fixed Top Bar ── */
 .top-bar {
@@ -243,7 +247,7 @@ body.lang-en [data-lang="ko"] { display: none !important; }
 
 .section p {
   margin-bottom: 16px;
-  text-align: justify;
+  text-align: left;
   white-space: pre-wrap;
 }
 
@@ -575,6 +579,8 @@ body.lang-en [data-lang="ko"] { display: none !important; }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
+  .mobile-br { display: block; }
+
   .paper {
     padding: 40px 28px;
   }
@@ -693,15 +699,15 @@ body.dark .top-bar-logo-text {
 }
 
 body.dark .meta-info span {
-  color: #5c5f66;
+  color: #8b8f96;
 }
 
 body.dark .cover-subtitle {
-  color: #71717a;
+  color: #9ca0a8;
 }
 
 body.dark .cover-disclaimer {
-  color: #5c5f66;
+  color: #8b8f96;
 }
 
 body.dark .section-rule {
@@ -709,7 +715,7 @@ body.dark .section-rule {
 }
 
 body.dark .strategy-list dd {
-  color: #8b8f96;
+  color: #a0a4ab;
 }
 
 body.dark .person {
@@ -717,20 +723,20 @@ body.dark .person {
 }
 
 body.dark .person-role {
-  color: #8b8f96;
+  color: #a0a4ab;
 }
 
 body.dark .person-quote {
-  color: #8b8f96;
-  border-left-color: #3f4046;
+  color: #a0a4ab;
+  border-left-color: #4a4b52;
 }
 
 body.dark .person-history li {
-  color: #8b8f96;
+  color: #a0a4ab;
 }
 
 body.dark .person-history li::before {
-  color: #5c5f66;
+  color: #71717a;
 }
 
 body.dark .process-box {
@@ -746,7 +752,7 @@ body.dark .position-details strong {
 }
 
 body.dark .position-details p {
-  color: #8b8f96;
+  color: #a0a4ab;
 }
 
 body.dark .apply-btn {
@@ -784,7 +790,7 @@ body.dark .form-submit:hover {
 }
 
 body.dark .form-success p {
-  color: #8b8f96;
+  color: #a0a4ab;
 }
 
 body.dark .references {
@@ -793,15 +799,15 @@ body.dark .references {
 
 body.dark .footer-info,
 body.dark .footer-info a {
-  color: #5c5f66;
+  color: #8b8f96;
 }
 
 body.dark .footer-end {
-  color: #3f4046;
+  color: #5c5f66;
 }
 
 body.dark .margin-toc a {
-  color: #5c5f66;
+  color: #71717a;
 }
 
 body.dark .margin-toc a:hover,
