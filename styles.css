@@ -336,20 +336,25 @@ body.lang-en { word-break: normal; }
 }
 
 .person-history {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .person-history li {
   font-size: 14px;
   color: #6B7280;
   padding: 2px 0;
-  list-style: none !important;
+  list-style-type: none !important;
+  margin-left: 0 !important;
 }
 
-.person-history li::before {
+.person-history li::before,
+.person-history li::marker {
   display: none !important;
+  content: none !important;
 }
 
 /* ── Process Flowchart ── */
