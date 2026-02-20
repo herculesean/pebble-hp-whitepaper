@@ -683,7 +683,7 @@ body.dark .toc-dropdown a:hover {
 }
 
 body.dark .top-bar-logo-img {
-  filter: brightness(0) invert(1);
+  filter: brightness(100);
 }
 
 body.dark .meta-info span {
