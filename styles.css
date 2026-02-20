@@ -343,16 +343,12 @@ body.lang-en { word-break: normal; }
 .person-history li {
   font-size: 14px;
   color: #6B7280;
-  padding: 2px 0 2px 20px;
+  padding: 2px 0;
   position: relative;
 }
 
 .person-history li::before {
-  content: '\2022';
-  position: absolute;
-  left: 2px;
-  color: #9ca3af;
-  font-size: 10px;
+  content: none;
   font-size: 12px;
 }
 
