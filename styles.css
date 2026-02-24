@@ -282,11 +282,10 @@ body.lang-en { word-break: normal; }
 }
 
 .strategy-list dd {
-  margin-left: 24px;
+  margin-left: 0;
   color: #6B7280;
   font-size: 15px;
-  text-align: justify;
-  white-space: pre-wrap;
+  text-align: left;
 }
 
 /* ── Emphasis Block (no borders) ── */
