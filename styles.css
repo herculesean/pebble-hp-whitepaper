@@ -269,8 +269,15 @@ body.lang-en { word-break: normal; }
 }
 
 /* ── Strategy Definitions ── */
+.strategy-heading {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
 .strategy-list {
-  margin: 28px 0;
+  margin: 16px 0 28px 0;
   padding-left: 0;
 }
 
