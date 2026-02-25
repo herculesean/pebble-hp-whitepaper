@@ -33,7 +33,7 @@ a:hover {
 /* ── Language Toggle ── */
 body.lang-ko [data-lang="en"] { display: none !important; }
 body.lang-en [data-lang="ko"] { display: none !important; }
-body.lang-ko { word-break: break-all; }
+body.lang-ko { word-break: keep-all; }
 body.lang-en { word-break: normal; }
 
 /* ── Mobile line break ── */
