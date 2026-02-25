@@ -370,10 +370,6 @@ body.lang-en { word-break: normal; }
   margin: 32px 0;
 }
 
-.process-mobile {
-  display: none;
-}
-
 .process-flow {
   margin: 0;
   overflow-x: auto;
@@ -384,44 +380,6 @@ body.lang-en { word-break: normal; }
   width: 100%;
   max-width: 680px;
   height: auto;
-}
-
-/* Mobile vertical flowchart */
-.process-flow-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-}
-
-.process-step {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: 1px solid currentColor;
-  border-radius: 2px;
-  padding: 10px 24px;
-  width: 70%;
-  opacity: 0.7;
-}
-
-.process-num {
-  font-size: 12px;
-  opacity: 0.5;
-  font-family: -apple-system, sans-serif;
-}
-
-.process-label {
-  font-size: 15px;
-  font-family: 'Noto Serif KR', 'Times New Roman', serif;
-}
-
-.process-arrow {
-  font-size: 10px;
-  opacity: 0.3;
-  line-height: 1;
-  padding: 4px 0;
 }
 
 /* ── Career Positions ── */
@@ -670,13 +628,10 @@ body.lang-en { word-break: normal; }
     padding-right: 5%;
   }
 
-  .process-desktop {
-    display: none;
-  }
-
-  .process-mobile {
-    display: block;
-    padding: 18px 16px;
+  .process-box {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 12px 10px;
   }
 }
 
@@ -696,6 +651,12 @@ body.lang-en { word-break: normal; }
   #abstract {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .process-box {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 10px 6px;
   }
 }
 
